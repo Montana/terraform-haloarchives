@@ -67,9 +67,35 @@ We can do the same for let's say `Robbie Bizzle`:
 
 <img width="1294" height="981" alt="Screenshot 2026-07-07 at 9 48 02 AM" src="https://github.com/user-attachments/assets/ce2ac34e-a725-4914-97f1-4b1a3f8f44d4" />
 
-Once a game is selected: 
+<br>Once a game is selected:</br>
 
 <img width="839" height="788" alt="carnage_report_robbie_bizzle_highlighted" src="https://github.com/user-attachments/assets/6aedf110-e5ec-494f-a477-9615e544b38a" />
+
+Example log:
+
+```─────────────────────────────────────────────────────────────────────────────
+ LOG GROUP  /aws/lambda/haloarchives-prod-search
+ STREAM     2026/07/07/[$LATEST]a3f9c1e84b7d42a0b6e5f0c2d19a7e33
+─────────────────────────────────────────────────────────────────────────────
+
+2026-07-07T16:41:02.118Z  START RequestId: 7c2e5a91-4d3b-4f0a-9e21-8b1c6f4a2d90 Version: $LATEST
+2026-07-07T16:41:02.121Z  INIT_REPORT Init Duration: 412.55 ms  (cold start)
+2026-07-07T16:41:02.126Z  {"level":"INFO","msg":"search.request","requestId":"7c2e5a91-4d3b-4f0a-9e21-8b1c6f4a2d90","route":"GET /players/search","query":{"gamertag":"Eclipse"},"trace_id":"1-6866d9ae-4c1a2f...","sourceIp":"10.40.3.117"}
+2026-07-07T16:41:02.204Z  {"level":"DEBUG","msg":"catalog.query","table":"haloarchives-prod-catalog","index":"gamertag-index","key":"GT#eclipse","consumed_rcu":1.5}
+2026-07-07T16:41:02.281Z  {"level":"INFO","msg":"search.hit","gamertag":"Eclipse","archive_id":"1300157218","team":"BLUE","kills":26,"deaths":15,"plus_minus":11,"assists":19,"kd":1.73,"game_type":"MLG Team King","map":"Construct","played_at":"2009-08-14T06:27:00Z"}
+2026-07-07T16:41:02.283Z  {"level":"INFO","msg":"search.result","matches":1,"scanned":1,"latency_ms":157}
+2026-07-07T16:41:02.284Z  END RequestId: 7c2e5a91-4d3b-4f0a-9e21-8b1c6f4a2d90
+2026-07-07T16:41:02.284Z  REPORT RequestId: 7c2e5a91-4d3b-4f0a-9e21-8b1c6f4a2d90  Duration: 166.02 ms  Billed Duration: 167 ms  Memory Size: 512 MB  Max Memory Used: 118 MB
+
+2026-07-07T16:41:47.905Z  START RequestId: b18f0d67-2a54-49c1-8f3e-1d90c7ab4e52 Version: $LATEST
+2026-07-07T16:41:47.907Z  {"level":"INFO","msg":"search.request","requestId":"b18f0d67-2a54-49c1-8f3e-1d90c7ab4e52","route":"GET /players/search","query":{"gamertag":"Robbie Bizzle"},"trace_id":"1-6866d9db-9f0e71...","sourceIp":"10.40.3.117"}
+2026-07-07T16:41:47.949Z  {"level":"DEBUG","msg":"catalog.query","table":"haloarchives-prod-catalog","index":"gamertag-index","key":"GT#robbie bizzle","consumed_rcu":1.5}
+2026-07-07T16:41:48.002Z  {"level":"INFO","msg":"search.hit","gamertag":"Robbie Bizzle","archive_id":"1801284263","team":"RED","kills":19,"deaths":11,"plus_minus":8,"assists":6,"kd":1.73,"game_type":"MLG Team Slayer","map":"Foundry","played_at":"2010-09-11T15:28:00Z"}
+2026-07-07T16:41:48.004Z  {"level":"INFO","msg":"search.result","matches":1,"scanned":1,"latency_ms":99}
+2026-07-07T16:41:48.005Z  END RequestId: b18f0d67-2a54-49c1-8f3e-1d90c7ab4e52
+2026-07-07T16:41:48.005Z  REPORT RequestId: b18f0d67-2a54-49c1-8f3e-1d90c7ab4e52  Duration: 100.34 ms  Billed Duration: 101 ms  Memory Size: 512 MB  Max Memory Used: 121 MB
+─────────────────────────────────────────────────────────────────────────────
+```
 
 ## Layout
 
