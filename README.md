@@ -106,4 +106,3 @@ terraform apply -var-file=environments/dev.tfvars
 - The Lambda handlers in `src/` are working reference implementations, not
   production-hardened (no auth on the API, minimal validation). Wire an authorizer
   (Cognito/JWT/IAM) onto the API routes before exposing it.
-```
