@@ -47,6 +47,22 @@ asynchronous restore workflows fronted by an HTTP API.
 | `api`           | HTTP API Gateway with a Lambda proxy route and a Step Functions service integration |
 | `observability` | Alarm SNS topic, CloudWatch alarms (DLQ depth, Lambda errors, DDB throttles), dashboard |
 
+Say if I looked up `Eclipse` for Halo 3, I'd get:
+
+<img width="916" height="464" alt="Screenshot 2026-07-07 at 9 30 40 AM" src="https://github.com/user-attachments/assets/17de196b-c7b8-4416-a5f8-bdc2d31d2d52" />
+
+In the logs it would look like:
+
+```tf
+Searched player Eclipse — game #1300157218 (MLG Team King, Construct,
+2009-08-14). BLUE team; 26 kills / 15 deaths, +11, 19 assists, K/D 1.73.
+
+Content
+```
+
+<br><img width="836" height="783" alt="carnage_report_eclipse_highlighted" src="https://github.com/user-attachments/assets/d5beab14-a64a-4efa-b78c-6ce7ff924b97" /></br>
+
+
 ## Layout
 
 ```
