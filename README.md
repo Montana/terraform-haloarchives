@@ -63,7 +63,7 @@ It would then render:
 
 <br><img width="836" height="783" alt="carnage_report_eclipse_highlighted" src="https://github.com/user-attachments/assets/d5beab14-a64a-4efa-b78c-6ce7ff924b97" /></br>
 
-We can do the same for let's say Robbie Bizzle:
+We can do the same for let's say `Robbie Bizzle`:
 
 <img width="1294" height="981" alt="Screenshot 2026-07-07 at 9 48 02 AM" src="https://github.com/user-attachments/assets/ce2ac34e-a725-4914-97f1-4b1a3f8f44d4" />
 
