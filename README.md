@@ -9,9 +9,7 @@ The environment has been checked with pre-commit checks:
 
 <img width="1325" height="218" alt="Screenshot 2026-07-07 at 10 14 15 AM" src="https://github.com/user-attachments/assets/93904a94-3264-4cad-af46-5be5500bea57" />
 
-Worth noting:
-
-Signed off by myself with lease via:
+Worth noting, signed off by myself with lease via:
 
 ```bash
 git push --force-with-lease origin docs/fix-readme-anchor-links
