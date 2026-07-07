@@ -1,8 +1,15 @@
 # HaloArchives — Terraform
 
-A modular, multi-environment AWS archival platform: WORM object storage with
-tiered Glacier lifecycle, a DynamoDB catalog, event-driven ingestion, and
+A modular, multi-environment AWS archival platform: WORM object storage with tiered Glacier lifecycle, a DynamoDB catalog, event-driven ingestion, and
 asynchronous restore workflows fronted by an HTTP API.
+
+## Environment check
+
+The environment has been checked with pre-commit checks: 
+
+<img width="1325" height="218" alt="Screenshot 2026-07-07 at 10 14 15 AM" src="https://github.com/user-attachments/assets/93904a94-3264-4cad-af46-5be5500bea57" />
+
+Some notes below:
 
 > Assumes AWS. If you meant GCP/Azure or a non-cloud target, the module
 > boundaries carry over but the resources would be swapped out.
