@@ -51,7 +51,7 @@ Say if I looked up `Eclipse` for Halo 3, I'd get:
 
 <img width="916" height="464" alt="Screenshot 2026-07-07 at 9 30 40 AM" src="https://github.com/user-attachments/assets/17de196b-c7b8-4416-a5f8-bdc2d31d2d52" />
 
-In the logs it would look like:
+<br>In the logs it would look like:</br>
 
 ```tf
 Searched player Eclipse — game #1300157218 (MLG Team King, Construct,
