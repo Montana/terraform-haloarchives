@@ -1,0 +1,11 @@
+environment                = "prod"
+region                     = "us-east-1"
+replica_region             = "us-west-2"
+enable_object_lock         = true
+object_lock_retention_days = 3650
+enable_replication         = true
+catalog_billing_mode       = "PAY_PER_REQUEST"
+catalog_point_in_time_recovery = true
+lambda_log_retention_days  = 90
+alarm_sns_email            = "prod-alerts@example.com"
+ingestion_dlq_alarm_threshold = 1

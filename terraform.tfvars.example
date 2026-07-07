@@ -1,0 +1,14 @@
+# Copy to <env>.auto.tfvars or pass with -var-file. Do not commit real secrets.
+environment    = "dev"
+region         = "us-east-1"
+replica_region = "us-west-2"
+owner          = "platform-team"
+cost_center    = "1234"
+
+# Storage / compliance
+enable_object_lock         = true
+object_lock_retention_days = 3650
+enable_replication         = false
+
+# Alerts
+alarm_sns_email = "alerts@example.com"
